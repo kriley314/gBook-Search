@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "book-search",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "Book Search",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -16,10 +16,24 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^4.1.0",
-    "nodemon": "^1.18.7"
+    "nodemon": "^1.19.0"
   },
   "dependencies": {
     "express": "^4.16.3",
-    "if-env": "^1.0.4"
-  }
+    "if-env": "^1.0.4",
+    "mongoose": "^5.5.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-toastify": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kriley314/gBook-Search.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/kriley314/gBook-Search/issues"
+  },
+  "homepage": "https://github.com/kriley314/gBook-Search#readme"
 }
