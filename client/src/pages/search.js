@@ -9,7 +9,7 @@ class Search extends Component {
   state = {
     books: [],
     q: "",
-    message: "Simply search for books via the Google Books API"
+    message: "Search for books via the Google Books API"
   };
 
   handleInputChange = event => {
@@ -20,6 +20,7 @@ class Search extends Component {
   };
 
   getBooks = () => {
+    console.log( "Here is getBooks with: " + this.state.q );
     API.getBooks(this.state.q)
       .then(res =>
         this.setState({

@@ -3,22 +3,11 @@ import { Link, NavLink } from "react-router-dom";
 import "./style.css";
 const NavBar = () => {
   return (
-    <React.Fragment>
+
       <nav className="navbar navbar-expand-lg navbar-light">
-        <Link className="navbar-brand brand-title" to="#">
+        <a className="navbar-brand brand-title" to="#">
           Google Books Search
-        </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
+        </a>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
@@ -34,7 +23,7 @@ const NavBar = () => {
           </ul>
         </div>
       </nav>
-    </React.Fragment>
+
   );
 };
 
